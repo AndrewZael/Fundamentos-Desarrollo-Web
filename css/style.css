@@ -1,0 +1,32 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    z-index: 1;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 34px;
+}
+
+#me {
+    background: url('https://drescuela.com/wp-content/uploads/2018/06/landscapes-portada-1280x640.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.nombre {
+    bottom: 25px;
+    left: 0;
+    right: 0;
+}
+
+.nombre>h2,
+.nombre>h1 {
+    font-size: 72px;
+}
+
+.full-h {
+    min-height: 100vh;
+}
