@@ -12,8 +12,9 @@ p {
 }
 
 #me {
-    background: url('https://drescuela.com/wp-content/uploads/2018/06/landscapes-portada-1280x640.jpg') no-repeat center;
+    background: url('../img/alfonso.jpg') no-repeat center;
     background-size: cover;
+    filter: grayscale(.9);
 }
 
 .nombre {
@@ -33,4 +34,33 @@ p {
 
 .line-h-normal {
     line-height: normal;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 576px) {
+    #menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        height: 100%;
+        padding: 15px;
+        width: 250px;
+        transition: left ease-in .3s;
+        -webkit-transition: left ease-in .3s;
+        -moz-transition: left ease-in .3s;
+    }
+    #menu.menu-show {
+        left: 0;
+        transition: left ease-in-out .3s;
+        -webkit-transition: left ease-in-out .3s;
+        -moz-transition: left ease-in-out .3s;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nombre {
+        width: 95% !important;
+    }
 }

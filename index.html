@@ -14,18 +14,22 @@
     <body>
         <div id="macro">
 
-            <header class="bg-success pt-3 pb-3 position-fixed w-100">
+            <header class="bg-success pt-3 pb-3 position-fixed w-100 border-bottom border-white">
                 <div class="container row align-items-center m-auto">
                     <div>
-                        <a class="text-white">AG</a>
+                        <a href="#me" title="Alfonso Guzmán" class="text-decoration-none text-white h2 font-weight-bold">AG</a>
                     </div>
-                    <div class="col text-right">
-                        <nav>
+                    <div class="col text-sm-right">
+                        <button id="btn-toogle-menu" class="btn d-sm-none float-right" onClick="toogleMenu()">
+                            <i class="fas fa-2x fa-ellipsis-v text-white"></i>
+                        </button>
+                        <nav id="menu" class="bg-success">
                             <ul class="list-unstyled m-0">
-                                <li class="d-inline ml-1 mr-1"><a href="#" class="text-white text-decoration-none">Sobre mi</a></li>
-                                <li class="d-inline ml-1 mr-1"><a href="#" class="text-white text-decoration-none">Experiencia</a></li>
-                                <li class="d-inline ml-1 mr-1"><a href="#" class="text-white text-decoration-none">Trabajos</a></li>
-                                <li class="d-inline ml-1 mr-1"><a href="#" class="text-white text-decoration-none">Contaco</a></li>
+                                <li class="mb-3 mt-1"><a href="#me" title="Alfonso Guzmán" class="d-sm-none text-decoration-none text-white h2 font-weight-bold">AG</a></li>
+                                <li class="d-none d-sm-inline ml-1 mr-1"><a href="#descripcion" class="text-white text-decoration-none">Sobre mi</a></li>
+                                <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#experiencia" class="text-white text-decoration-none">Experiencia</a></li>
+                                <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#trabajos" class="text-white text-decoration-none">Trabajos</a></li>
+                                <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -33,18 +37,18 @@
             </header>
 
             <section id="me" class="full-h">
-                <div class="nombre text-center text-white position-absolute w-25 ml-auto mr-auto">
+                <div class="nombre text-center text-white position-absolute w-50 ml-auto mr-auto">
                     <h2 class="m-0 font-weight-light">YO SOY</h2>
                     <hr class="border-bottom border-white" />
                     <h1 class="m-0">ALFONSO</h1>
                 </div>
             </section>
 
-            <section id="descrepcion" class="full-h">
+            <section id="descripcion" class="full-h d-none d-sm-block">
                 <div class="container m-auto d-flex flex-column justify-content-center full-h">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h3>
+                    <h3 class="pt-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h3>
                     <hr class="border-bottom border-dark border-top-0 w-25" />
-                    <div class="d-flex">
+                    <div class="d-flex flex-column flex-md-row">
                         <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante. Curabitur vel lacinia
                             nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi blandit, euismod
                             ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
@@ -55,9 +59,9 @@
                 </div>
             </section>
 
-            <section id="experiencia" class="full-h d-flex">
+            <section id="experiencia" class="full-h d-flex pb-4">
                 <div class="container m-auto text-center">
-                    <h2 class="font-weight-bold display-4">MI EXPERIENCIA</h2>
+                    <h2 class="font-weight-bold display-4 pt-5 mt-5">MI EXPERIENCIA</h2>
                     <hr class="border-bottom border-dark border-top-0 w-25 mb-5" />
                     <ul class="list-unstyled m-0 row justify-content-center">
                         <li class="col-12 col-md-6 mt-2 mb-3">
@@ -84,13 +88,13 @@
                 </div>
             </section>
 
-            <section id="trabajos" class="full-h bg-success d-flex">
+            <section id="trabajos" class="full-h bg-success d-flex pb-4">
                 <div class="container m-auto">
-                    <h2 class="font-weight-bold text-white display-4 text-center">MIS ULTIMOS TRABAJOS</h2>
+                    <h2 class="font-weight-bold text-white display-4 text-center pt-5 mt-5">MIS ULTIMOS TRABAJOS</h2>
                     <hr class="border-bottom border-white border-top-0 w-25 mb-5" />
                     <div class="row">
-                        <div class="col-12 col-md-4">
-                            <div class="card">
+                        <div class="col-12 col-sm-6 col-md-4 mb-3">
+                            <div class="card shadow">
                                 <img class="card-img-top" src="./img/santa-isabel.jpg" alt="Sitio Santa Isabel" title="Sitio Santa Isabel">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">Santa Isabel</h5>
@@ -101,8 +105,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
+                        <div class="col-12 col-sm-6 mb-sm-2 col-md-4 mb-3">
+                            <div class="card shadow">
                                 <img class="card-img-top" src="./img/giant.jpg" alt="Sitio Giant" title="Sitio Giant">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">Giant</h5>
@@ -113,8 +117,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="card">
+                        <div class="col-12 col-sm-6 mb-sm-2 col-md-4 mb-3">
+                            <div class="card shadow">
                                 <img class="card-img-top" src="./img/la-rosa.jpg" alt="Sitio La Rosa" title="Sitio La Rosa">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">La Rosa</h5>
@@ -172,7 +176,7 @@
             <footer class="bg-success pt-3 pb-3">
                 <div class="container m-auto">
                     <div class="row align-items-center w-75 m-auto">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
                             <h3 class="m-0 text-center text-md-left text-white font-weight-bold display-4">ALFONSO</h3>
                         </div>
                         <div class="col-12 col-md-6 text-center text-md-right">
@@ -193,7 +197,7 @@
             </footer>
 
             </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <script src="https://kit.fontawesome.com/6b2f62e2b5.js" crossorigin="anonymous"></script>
