@@ -30,3 +30,7 @@ p {
 .full-h {
     min-height: 100vh;
 }
+
+.line-h-normal {
+    line-height: normal;
+}
