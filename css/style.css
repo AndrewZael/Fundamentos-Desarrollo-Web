@@ -17,10 +17,20 @@ p {
     filter: grayscale(.9);
 }
 
+#me::before {
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .nombre {
-    bottom: 25px;
     left: 0;
     right: 0;
+    bottom: 0;
+    top: 0;
+    height: 205px;
 }
 
 .nombre>h2,
@@ -34,6 +44,10 @@ p {
 
 .line-h-normal {
     line-height: normal;
+}
+
+.card {
+    border-radius: 0 0 0 70px;
 }
 
 

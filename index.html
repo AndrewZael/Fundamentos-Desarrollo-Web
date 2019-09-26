@@ -16,16 +16,15 @@
 
             <header class="bg-success pt-3 pb-3 position-fixed w-100 border-bottom border-white">
                 <div class="container row align-items-center m-auto">
-                    <div>
-                        <a href="#me" title="Alfonso Guzmán" class="text-decoration-none text-white h2 font-weight-bold">AG</a>
-                    </div>
-                    <div class="col text-sm-right">
+                    <div class="col text-sm-center">
+                        <a href="#me" title="Alfonso Guzmán" class="d-sm-none float-left text-decoration-none text-white h4 font-weight-bold mt-1 mb-0">AG</a>
                         <button id="btn-toogle-menu" class="btn d-sm-none float-right" onClick="toogleMenu()">
-                            <i class="fas fa-2x fa-ellipsis-v text-white"></i>
+                            <i class="fas fa-ellipsis-v text-white"></i>
                         </button>
                         <nav id="menu" class="bg-success">
                             <ul class="list-unstyled m-0">
-                                <li class="mb-3 mt-1"><a href="#me" title="Alfonso Guzmán" class="d-sm-none text-decoration-none text-white h2 font-weight-bold">AG</a></li>
+                                <li class="mb-3 mt-1 d-sm-none"><a href="#me" title="Alfonso Guzmán" class="text-decoration-none text-white h2 font-weight-bold">AG</a></li>
+                                <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#me" class="text-white text-decoration-none">Inicio</a></li>
                                 <li class="d-none d-sm-inline ml-1 mr-1"><a href="#descripcion" class="text-white text-decoration-none">Sobre mi</a></li>
                                 <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#experiencia" class="text-white text-decoration-none">Experiencia</a></li>
                                 <li class="d-sm-inline mb-3 mb-sm-0 ml-0 ml-sm-1 mr-1"><a href="#trabajos" class="text-white text-decoration-none">Trabajos</a></li>
@@ -37,7 +36,10 @@
             </header>
 
             <section id="me" class="full-h">
-                <div class="nombre text-center text-white position-absolute w-50 ml-auto mr-auto">
+                <div class="nombre text-center text-white position-absolute w-50 m-auto">
+                    <div>
+                        <a href="#me" title="Alfonso Guzmán" class="text-decoration-none text-white display-4 font-weight-bold">AG</a>
+                    </div>
                     <h2 class="m-0 font-weight-light">YO SOY</h2>
                     <hr class="border-bottom border-white" />
                     <h1 class="m-0">ALFONSO</h1>
@@ -46,15 +48,12 @@
 
             <section id="descripcion" class="full-h d-none d-sm-block">
                 <div class="container m-auto d-flex flex-column justify-content-center full-h">
-                    <h3 class="pt-5 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus.</h3>
+                    <h3 class="font-weight-bold display-4 pt-5 mt-5 text-center">SOBRE MI</h3>
                     <hr class="border-bottom border-dark border-top-0 w-25" />
-                    <div class="d-flex flex-column flex-md-row">
-                        <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante. Curabitur vel lacinia
-                            nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi blandit, euismod
-                            ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
-                        <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante nulla. Donec in neque consectetur, ultrices justo eu, hendrerit lectus. Nullam fermentum turpis et dolor euismod consequat sed sed ante. Curabitur vel lacinia
-                            nisi. Sed mollis condimentum rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi lorem, mollis sit amet gravida in, finibus ut diam. Nunc cursus lacus ex, id interdum nibh tristique ac. Maecenas in mi blandit, euismod
-                            ipsum eu, lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
+                    <div class="w-75 m-auto">
+                        <p class="p-2 text-center">Con años de experiencia en diseño y desarrollo web, he trabajado en diversas empresas utilizando múltiples tecnologías enfocadas principalmente en la construcción Front End de sitios y aplicaciones web.</p>
+                        <p class="p-2 text-center">Mi objetivo principal es seguir desarrollándome profesionalmente y evolucionar en mi área aprendiendo constantemente nuevas tecnologías.
+                            <br />Como parte de mi crecimiento este último año me he acercado a la experiencia de usuario ya que actualmente me encuentro trabajando en el departamento de UX / UI de financiera automotriz FORUM.</p>
                     </div>
                 </div>
             </section>
@@ -65,24 +64,32 @@
                     <hr class="border-bottom border-dark border-top-0 w-25 mb-5" />
                     <ul class="list-unstyled m-0 row justify-content-center">
                         <li class="col-12 col-md-6 mt-2 mb-3">
-                            <img src="./img/youtouch.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
-                            <h4 class="font-weight-bold">Diseñador Web</h4>
-                            <span class="text-muted">2010 - 2013</span>
+                            <div class="rounded border p-3 shadow-sm">
+                                <img src="./img/youtouch.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
+                                <h4 class="font-weight-bold">Diseñador Web</h4>
+                                <span class="text-muted">2010 - 2013</span>
+                            </div>
                         </li>
                         <li class="col-12 col-md-6 mt-2 mb-3">
-                            <img src="./img/boliche.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
-                            <h4 class="font-weight-bold">Front End</h4>
-                            <span class="text-muted">2014 - 2016</span>
+                            <div class="rounded border p-3 shadow-sm">
+                                <img src="./img/boliche.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
+                                <h4 class="font-weight-bold">Front End</h4>
+                                <span class="text-muted">2014 - 2016</span>
+                            </div>
                         </li>
                         <li class="col-12 col-md-6 mt-2 mb-3">
-                            <img src="./img/doblegiro.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
-                            <h4 class="font-weight-bold">Desarrollador Web - Wordpress</h4>
-                            <span class="text-muted">2017 - 2018</span>
+                            <div class="rounded border p-3 shadow-sm">
+                                <img src="./img/doblegiro.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
+                                <h4 class="font-weight-bold">Desarrollador Web - Wordpress</h4>
+                                <span class="text-muted">2017 - 2018</span>
+                            </div>
                         </li>
                         <li class="col-12 col-md-6 mt-2 mb-3">
-                            <img src="./img/forum.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
-                            <h4 class="font-weight-bold">Front End - Angular</h4>
-                            <span class="text-muted">2019</span>
+                            <div class="rounded border p-3 shadow-sm">
+                                <img src="./img/forum.jpg" class="mb-2 border rounded-circle p-2" alt="Agencia Doblegiro" title="Agencia Doblegiro" />
+                                <h4 class="font-weight-bold">Front End - Angular</h4>
+                                <span class="text-muted">2019</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -94,37 +101,43 @@
                     <hr class="border-bottom border-white border-top-0 w-25 mb-5" />
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-4 mb-3">
-                            <div class="card shadow">
+                            <div class="card shadow border-0">
                                 <img class="card-img-top" src="./img/santa-isabel.jpg" alt="Sitio Santa Isabel" title="Sitio Santa Isabel">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">Santa Isabel</h5>
-                                    <p class="card-text text-muted line-h-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text text-muted line-h-normal">
+                                        Sitio web para supermercado Santa Isabel desarrollado en Wordpress.
+                                    </p>
                                     <div class="text-right">
-                                        <a href="https://www.santaisabel.cl/" target="_blank" rel="noreferrer noopener" title="Sitio Santa Isabel" class="btn btn-primary">Ver proyecto &raquo;</a>
+                                        <a href="https://www.santaisabel.cl/" target="_blank" rel="noreferrer noopener" title="Sitio Santa Isabel" class="btn">Ver proyecto &raquo;</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 mb-sm-2 col-md-4 mb-3">
-                            <div class="card shadow">
+                            <div class="card shadow border-0">
                                 <img class="card-img-top" src="./img/giant.jpg" alt="Sitio Giant" title="Sitio Giant">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">Giant</h5>
-                                    <p class="card-text text-muted line-h-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text text-muted line-h-normal">
+                                        Sitio web especializado en ciclismo y carro de compras desarrollado en woocommerce
+                                    </p>
                                     <div class="text-right">
-                                        <a href="http://giant.cl/" target="_blank" rel="noreferrer noopener" title="Sitio Giant" class="btn btn-primary">Ver proyecto &raquo;</a>
+                                        <a href="http://giant.cl/" target="_blank" rel="noreferrer noopener" title="Sitio Giant" class="btn">Ver proyecto &raquo;</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 mb-sm-2 col-md-4 mb-3">
-                            <div class="card shadow">
+                            <div class="card shadow border-0">
                                 <img class="card-img-top" src="./img/la-rosa.jpg" alt="Sitio La Rosa" title="Sitio La Rosa">
                                 <div class="card-body border-top">
                                     <h5 class="card-title">La Rosa</h5>
-                                    <p class="card-text text-muted line-h-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text text-muted line-h-normal">
+                                        Sitio web creado para viñedo La Rosa. Desarrollo personalizado en Wordpress
+                                    </p>
                                     <div class="text-right">
-                                        <a href="https://larosa.cl" target="_blank" rel="noreferrer noopener" title="Vinos La Rosa" class="btn btn-primary">Ver proyecto &raquo;</a>
+                                        <a href="https://larosa.cl" target="_blank" rel="noreferrer noopener" title="Vinos La Rosa" class="btn">Ver proyecto &raquo;</a>
                                     </div>
                                 </div>
                             </div>
